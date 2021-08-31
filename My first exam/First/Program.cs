@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace First
+namespace Art
 {
     class Program
     {
