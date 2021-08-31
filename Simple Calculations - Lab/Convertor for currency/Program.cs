@@ -7,57 +7,57 @@ namespace Convertor_for_currency
         static void Main(string[] args)
         {
             var a = double.Parse(Console.ReadLine());
-            var vhod = Console.ReadLine();
-            var izhod = Console.ReadLine();
+            var input = Console.ReadLine();
+            var output = Console.ReadLine();
             var USD = 1.79549;
             var EUR = 1.95583;
             var GBP = 2.53405;
 
-            if ((vhod == "BGN") && (izhod == "USD"))
+            if ((input == "BGN") && (izhod == "USD"))
             {
                 Console.WriteLine(Math.Round(a / USD, 2));
             }
-            else if ((vhod == "BGN") && (izhod == "EUR"))
+            else if ((input == "BGN") && (output == "EUR"))
             {
                 Console.WriteLine(Math.Round(a / EUR, 2));
             }
-            else if ((vhod == "BGN") && (izhod == "GBP"))
+            else if ((input == "BGN") && (output == "GBP"))
             {
                 Console.WriteLine(Math.Round(a / GBP, 2));
             }
-            if ((vhod == "USD") && (izhod == "BGN"))
+            if ((input == "USD") && (output == "BGN"))
             {
                 Console.WriteLine(Math.Round(a * USD, 2));
             }
-            else if ((vhod == "USD") && (izhod == "EUR"))
+            else if ((input == "USD") && (output == "EUR"))
             {
                 Console.WriteLine(Math.Round((a * USD) / EUR, 2));
             }
-            else if ((vhod == "USD") && (izhod == "GBP"))
+            else if ((input == "USD") && (output == "GBP"))
             {
                 Console.WriteLine(Math.Round((a * USD) / GBP, 2));
             }
-            if ((vhod == "EUR") && (izhod == "BGN"))
+            if ((input == "EUR") && (output == "BGN"))
             {
                 Console.WriteLine(Math.Round(a * EUR, 2));
             }
-            else if ((vhod == "EUR") && (izhod == "USD"))
+            else if ((input == "EUR") && (output == "USD"))
             {
                 Console.WriteLine(Math.Round((a * EUR) / USD, 2));
             }
-            else if ((vhod == "EUR") && (izhod == "GBP"))
+            else if ((input == "EUR") && (output == "GBP"))
             {
                 Console.WriteLine(Math.Round((a * EUR) / GBP, 2));
             }
-            if ((vhod == "GBP") && (izhod == "BGN"))
+            if ((input == "GBP") && (output == "BGN"))
             {
                 Console.WriteLine(Math.Round((a * GBP), 2));
             }
-            else if ((vhod == "GBP") && (izhod == "USD"))
+            else if ((input == "GBP") && (output == "USD"))
             {
                 Console.WriteLine(Math.Round((a * GBP) / USD, 2));
             }
-            else if ((vhod == "GBP") && (izhod == "EUR"))
+            else if ((input == "GBP") && (output == "EUR"))
             {
                 Console.WriteLine(Math.Round((a * GBP) / EUR, 2));
             }
